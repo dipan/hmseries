@@ -10119,7 +10119,7 @@ header.masthead h1 {
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 390px;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
   display: flex;

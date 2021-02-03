@@ -132,7 +132,7 @@
         </div>
       </section>
       <!-- Services-->
-      <section class="page-section" id="services">
+      <!-- <section class="page-section" id="services">
         <div class="container">
           <h2 class="text-center mt-0">At Your Service</h2>
           <hr class="divider my-4" />
@@ -175,7 +175,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Portfolio-->
       <div id="portfolio">
         <div class="container-fluid p-0">
@@ -183,7 +183,8 @@
             <div class="col-lg-4 col-sm-6" v-for="item in portfolio">
               <a
                 class="portfolio-box"
-                href="assets/img/portfolio/fullsize/1.jpg"
+                v-bind:href="item.youtubeLink"
+                target="_blank"
               >
                 <img
                   class="img-fluid"

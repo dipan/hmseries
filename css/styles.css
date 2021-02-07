@@ -9754,6 +9754,10 @@ button.bg-dark:focus {
   font-family: Sofia !important;
 }
 
+.font-family-lobster {
+  font-family: 'Lobster', cursive;
+}
+
 .font-weight-light {
   font-weight: 300 !important;
 }
@@ -10119,8 +10123,17 @@ header.masthead h1 {
   position: relative;
   display: block;
   width: 100%;
-  height: 390px;
+  height: 410px;
 }
+@media (max-width: 992px) {
+  #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 290px;
+  }
+}
+
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
   display: flex;
   align-items: center;

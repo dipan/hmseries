@@ -18,7 +18,7 @@
     ></script>
     <!-- Google fonts-->
     <link
-      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
     <link
@@ -66,17 +66,12 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#services"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#portfolio"
                   >Portfolio</a
                 >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contact"
@@ -111,71 +106,6 @@
           </div>
         </div>
       </header>
-      <!-- About-->
-      <section class="page-section bg-primary" id="about">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-              <h2 class="text-white mt-0">
-                NEEL (MILTON) || FOUNDER OF HM-SERIES
-              </h2>
-              <hr class="divider light my-4" />
-              <p class="text-white-50 mb-4">
-                Neel Milton is a lyricist and founder of HM-SERIES. He is
-                experienced with Good Music & had a dream of Heaven of Music.
-              </p>
-              <a class="btn btn-light btn-xl js-scroll-trigger" href="#services"
-                >Get Started!</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Services-->
-      <!-- <section class="page-section" id="services">
-        <div class="container">
-          <h2 class="text-center mt-0">At Your Service</h2>
-          <hr class="divider my-4" />
-          <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-                <h3 class="h4 mb-2">Sturdy Themes</h3>
-                <p class="text-muted mb-0">
-                  Our themes are updated regularly to keep them bug free!
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-                <h3 class="h4 mb-2">Up to Date</h3>
-                <p class="text-muted mb-0">
-                  All dependencies are kept current to keep things fresh.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-                <h3 class="h4 mb-2">Ready to Publish</h3>
-                <p class="text-muted mb-0">
-                  You can use this design as is, or you can make changes!
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-                <h3 class="h4 mb-2">Made with Love</h3>
-                <p class="text-muted mb-0">
-                  Is it really open source if it's not made with love?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <!-- Portfolio-->
       <div id="portfolio">
         <div class="container-fluid p-0">
@@ -186,13 +116,11 @@
                 v-bind:href="item.youtubeLink"
                 target="_blank"
               >
-                <img
-                  class="img-fluid"
-                  v-bind:src="item.path"
-                  alt=""
-                />
+                <img class="img-fluid" v-bind:src="item.path" alt="" />
                 <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">{{ item.category }}</div>
+                  <div class="project-category text-white-50">
+                    {{ item.category }}
+                  </div>
                   <div class="project-name">{{ item.project }}</div>
                 </div>
               </a>
@@ -200,6 +128,26 @@
           </div>
         </div>
       </div>
+      <!-- About-->
+      <section class="page-section bg-primary" id="about">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="text-white mt-0 font-family-lobster">
+                NEEL (MILTON) || FOUNDER OF HM-SERIES
+              </h2>
+              <hr class="divider light my-4" />
+              <p class="text-white-50 mb-4 font-family-lobster">
+                Neel Milton is a lyricist and founder of HM-SERIES. He is
+                experienced with Good Music & had a dream of Heaven of Music.
+              </p>
+              <a class="btn btn-light btn-xl js-scroll-trigger" href="#services"
+                >Get Started!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Call to action-->
       <!-- <section class="page-section bg-dark text-white">
                 <div class="container text-center">

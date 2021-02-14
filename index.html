@@ -40,6 +40,14 @@
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <!-- IFrame script -->
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height =
+          obj.contentWindow.document.documentElement.scrollHeight + "px";
+      }
+    </script>
   </head>
   <body id="page-top">
     <div id="app">
@@ -111,19 +119,17 @@
         <div class="container-fluid p-0">
           <div class="row no-gutters">
             <div class="col-lg-4 col-sm-6" v-for="item in portfolio">
-              <a
+              <iframe
                 class="portfolio-box"
-                v-bind:href="item.youtubeLink"
-                target="_blank"
+                v-bind:title="item.project"
+                v-bind:src="item.youtubeLink"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                scrolling="no"
+                onload="resizeIframe(this)"
               >
-                <img class="img-fluid" v-bind:src="item.path" alt="" />
-                <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">
-                    {{ item.category }}
-                  </div>
-                  <div class="project-name">{{ item.project }}</div>
-                </div>
-              </a>
+              </iframe>
             </div>
           </div>
         </div>

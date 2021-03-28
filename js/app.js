@@ -35,6 +35,11 @@ const app = new Vue({
     portfolio: [
       {
         category: "Bengali Video Song",
+        project: "Jodi Toke Ake Mon",
+        youtubeLink: "https://www.youtube.com/embed/sNonwQzsGzY",
+      },
+      {
+        category: "Bengali Video Song",
         project: "Tui Ki Amar Hobi Bol",
         youtubeLink: "https://www.youtube.com/embed/n56p-kRV6no",
       },

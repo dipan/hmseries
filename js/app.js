@@ -35,6 +35,16 @@ const app = new Vue({
     portfolio: [
       {
         category: "Bengali Video Song",
+        project: "Bosonta Ese Geche",
+        youtubeLink: "https://www.youtube.com/embed/TokNdNozgA4",
+      },
+      {
+        category: "Bengali Video Song",
+        project: "Pather Dhulo",
+        youtubeLink: "https://www.youtube.com/embed/D9Oz5Eq7hbM",
+      },
+      {
+        category: "Bengali Video Song",
         project: "Jodi Toke Ake Mon",
         youtubeLink: "https://www.youtube.com/embed/sNonwQzsGzY",
       },

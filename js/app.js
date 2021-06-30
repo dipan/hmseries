@@ -35,6 +35,11 @@ const app = new Vue({
     portfolio: [
       {
         category: "Bengali Video Song",
+        project: "Veja Veja Chokh",
+        youtubeLink: "https://www.youtube.com/embed/De1wdjE15oo",
+      },
+      {
+        category: "Bengali Video Song",
         project: "Veja Ghas Baro Mas",
         youtubeLink: "https://www.youtube.com/embed/Y9Yyc5Vwwso",
       },
